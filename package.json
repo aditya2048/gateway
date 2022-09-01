@@ -1,0 +1,31 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "A gateway service for routing and metering",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -r esm index.js",
+    "migrate": "sequelize db:migrate",
+    "create-model": "sequelize model:create"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "http-proxy": "^1.18.1",
+    "http-proxy-middleware": "^2.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.3",
+    "mysql2": "^2.3.2",
+    "nodemon": "^2.0.13",
+    "sequelize": "^6.7.0",
+    "stream-array": "^1.1.2"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  }
+}
